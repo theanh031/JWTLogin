@@ -1,0 +1,18 @@
+spring: 
+  datasource:
+    url: jdbc:mysql://localhost:3306/register_phone
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    
+application:
+  security:
+    jwt:
+      secret-key: MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEILnRDhxLL7oR0uWh/A4i9XzvIkDQps8CvGtFOtDnf0i5uBZi+7ClhZ56puUJEdRT8KW9pKLpIn+fxO1JV1gcNQ
+      expiration: 86400000 
+      refresh-token:
+        expiration: 604800000 
+
+
